@@ -1,0 +1,12 @@
+@using System.Reflection
+@{
+  ViewBag.Title = "Home Page";
+  var version = typeof(DemoAssignment.RouteConfig).Assembly.GetName().Version;
+}
+
+<app-root></app-root>
+<script src="~/dist/DemoAssignment/polyfills.js?v=@version"></script>
+<script src="~/dist/DemoAssignment/styles.js?v=@version"></script>
+<script src="~/dist/DemoAssignment/vendor.js?v=@version"></script>
+<script src="~/dist/DemoAssignment/main.js?v=@version"></script>
+<script src="~/dist/DemoAssignment/runtime.js?v=@version"></script>
